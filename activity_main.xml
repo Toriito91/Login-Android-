@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/tx_usuario"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.44"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <EditText
+        android:id="@+id/tx_usuario"
+        android:layout_width="277dp"
+        android:layout_height="58dp"
+        android:background="@android:drawable/button_onoff_indicator_on"
+        android:bufferType="normal"
+        android:ellipsize="none"
+        android:ems="10"
+        android:foregroundTint="@android:color/black"
+        android:hint="Nombre de usuario:"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="228dp"
+        tools:visibility="visible"
+        tools:ignore="MissingConstraints" />
+
+
+
+
+    <EditText
+        android:id="@+id/tx_contraseña"
+        android:layout_width="277dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="44dp"
+        android:background="@android:drawable/button_onoff_indicator_on"
+        android:bufferType="normal"
+        android:ems="10"
+        android:foregroundTint="@android:color/black"
+        android:hint="Contraseña:"
+        android:inputType="text|textPassword"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tx_usuario"
+        tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/botonRegistrar"
+        android:layout_width="140dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="60dp"
+        android:background="@android:drawable/button_onoff_indicator_on"
+        android:foregroundTint="@android:color/black"
+        android:onClick="botonRegistrar"
+        android:text="Registrar"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/botonIngresar"
+        app:layout_constraintHorizontal_bias="0.79"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tx_contraseña"
+        app:layout_constraintVertical_bias="0.061" />
+
+    <Button
+        android:id="@+id/botonIngresar"
+        android:layout_width="140dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="60dp"
+        android:background="@android:drawable/button_onoff_indicator_on"
+        android:foregroundTint="@android:color/black"
+        android:onClick="botonIngresar"
+        android:text="Ingresar"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.797"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tx_contraseña"
+        app:layout_constraintVertical_bias="0.062" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
